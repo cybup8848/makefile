@@ -1,0 +1,18 @@
+OBJ=$(patsubst %.c,%.o,$(wildcard *.c))
+TARGET=world.out
+$(TARGET):$(OBJ)
+	gcc -o $(TARGET) $(OBJ)
+%.o: %.c
+	@echo "compling $< ..."
+	gcc -c -o $@ $<
+clean:
+	rm -f *.o $(TARGET)
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,5 @@
+no_output:
+	@echo "not display"
+	echo "will display"
+
+

@@ -1,0 +1,5 @@
+ignore_error:
+	-rm 1.txt
+	echo "ok"
+
+

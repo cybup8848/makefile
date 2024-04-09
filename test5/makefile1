@@ -1,0 +1,12 @@
+OBJ=$(patsubst %.c,%.o,$(wildcard *.c))
+TARGET=world.out
+
+$(TARGET):$(OBJ)
+	gcc -o $(TARGET) $(OBJ)
+
+.PHNOY:clean
+clean:
+	rm -f *.o $(TARGET)
+
+
+
